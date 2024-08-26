@@ -16,6 +16,7 @@ function App() {
   const { rive, RiveComponent } = useRive({
     src: "animations/laptop_girl.riv",
     stateMachines: state_machine_name,
+    isTouchScrollEnabled: true,
     autoplay: true,
   });
 

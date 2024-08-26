@@ -6,6 +6,7 @@ function About() {
   const { rive, RiveComponent } = useRive({
     src: "animations/pencil_girl.riv",
     stateMachines: state_machine_nameC,
+    isTouchScrollEnabled: true,
     autoplay: true,
   });
 

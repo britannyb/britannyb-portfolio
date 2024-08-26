@@ -9,6 +9,7 @@ function Projects() {
   const { rive, RiveComponent } = useRive({
     src: "animations/ipad_girl.riv",
     stateMachines: state_machine_nameB,
+    isTouchScrollEnabled: true,
     autoplay: true,
   });
 
