@@ -26,14 +26,18 @@ const ToggleButton = () => {
           className="flex flex-wrap items-center inline dark:hidden"
         >
           <img src="images/controller.png" width="90px" alt="controller icon" />
-          <span>light mode</span>
+          <p>
+            <span>light mode</span>
+          </p>
         </div>
         <div
           id="toggle-dark"
           className="flex flex-wrap items-center flex-row-reverse hidden dark:flex"
         >
           <img src="images/controller.png" width="90px" alt="controller icon" />
-          <span>dark mode</span>
+          <p>
+            <span>dark mode</span>
+          </p>
         </div>
       </button>
     </>
