@@ -442,6 +442,11 @@ header nav .active p {
   #skill-gray {
     min-height: 50px;
   }
+
+  .parallax,
+  .parallaxB {
+    background-attachment: scroll;
+  }
 }
 
 @media screen and (max-width: 800px) {
