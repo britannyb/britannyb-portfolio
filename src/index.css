@@ -126,7 +126,7 @@ header nav .active p {
 }
 
 #me {
-  background: url("backgrounds/graph.png") no-repeat center center;
+  background: url("/backgrounds/graph.png") no-repeat center center;
   background-size: cover;
   padding: 50px 0;
 }
@@ -148,14 +148,14 @@ header nav .active p {
 }
 
 .parallax {
-  background: url("images/parallax.jpg") no-repeat center center;
+  background: url("/images/parallax.jpg") no-repeat center center;
   min-height: 300px;
   background-attachment: fixed;
   background-size: cover;
 }
 
 #skills {
-  background: url("backgrounds/topography.jpg") no-repeat center center;
+  background: url("/backgrounds/topography.jpg") no-repeat center center;
   background-size: cover;
   padding: 150px 0;
 }
@@ -291,7 +291,7 @@ header nav .active p {
 }
 
 .parallaxB {
-  background: url("images/parallaxB.JPG") no-repeat center center;
+  background: url("/images/parallaxB.JPG") no-repeat center center;
   min-height: 300px;
   background-attachment: fixed;
   background-size: cover;
@@ -302,7 +302,7 @@ header nav .active p {
 }
 
 #about {
-  background: url("backgrounds/lines.png") no-repeat center center;
+  background: url("/backgrounds/lines.png") no-repeat center center;
   background-size: cover;
   padding: 120px 0;
 }
