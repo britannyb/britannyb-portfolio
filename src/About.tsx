@@ -29,6 +29,7 @@ function About() {
           <div className="order-1 lg:order-2 text-center lg:text-left">
             <ScrollAnimation
               duration={5}
+              delay={1600}
               animateIn="hinge"
               initiallyVisible={true}
             >

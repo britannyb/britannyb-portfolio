@@ -468,7 +468,9 @@ header nav .active p {
   .laptopGirl,
   .ipadGirl,
   .pencilGirl {
-    height: 600px;
+    width: 120%;
+    object-fit: contain;
+    margin-left: -10%;
   }
 
   .parallax,
@@ -478,12 +480,6 @@ header nav .active p {
 }
 
 @media screen and (max-width: 600px) {
-  .laptopGirl,
-  .ipadGirl,
-  .pencilGirl {
-    height: 400px;
-  }
-
   #me,
   #skills,
   #projects,
