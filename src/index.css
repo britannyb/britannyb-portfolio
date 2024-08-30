@@ -147,6 +147,21 @@ header nav .active p {
   left: -15px;
 }
 
+#me .subtitle span {
+  letter-spacing: 0.1em;
+  animation: cursor 0.5s step-end infinite;
+}
+
+@keyframes cursor {
+  from,
+  to {
+    border-right: none;
+  }
+  50% {
+    border-right: 3px solid #e77b83;
+  }
+}
+
 .parallax {
   background: url("/images/parallax.jpg") no-repeat center center;
   min-height: 300px;

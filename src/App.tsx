@@ -51,7 +51,9 @@ function App() {
               <h1>
                 <mark>britanny</mark>
               </h1>
-              <p className="text-4xl subtitle">creativity + logic</p>
+              <p className="text-4xl subtitle">
+                <span>creativity + logic</span>
+              </p>
             </div>
           </div>
         </section>
