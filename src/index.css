@@ -421,6 +421,11 @@ header nav .active p {
     max-width: 400px;
     margin: -40px auto 0;
   }
+
+  .parallax,
+  .parallaxB {
+    background-attachment: scroll;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -465,11 +470,6 @@ header nav .active p {
 
   #skill-gray {
     min-height: 50px;
-  }
-
-  .parallax,
-  .parallaxB {
-    background-attachment: scroll;
   }
 }
 
