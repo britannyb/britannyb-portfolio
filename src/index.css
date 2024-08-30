@@ -149,16 +149,17 @@ header nav .active p {
 
 #me .subtitle span {
   letter-spacing: 0.1em;
+  border-right: 3px solid #e77b83;
   animation: cursor 0.5s step-end infinite;
 }
 
 @keyframes cursor {
   from,
   to {
-    border-right: none;
+    border-color: transparent;
   }
   50% {
-    border-right: 3px solid #e77b83;
+    border-color: #e77b83;
   }
 }
 
