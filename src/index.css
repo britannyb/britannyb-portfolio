@@ -468,9 +468,9 @@ header nav .active p {
   .laptopGirl,
   .ipadGirl,
   .pencilGirl {
-    width: 120%;
+    width: 116%;
     object-fit: contain;
-    margin-left: -10%;
+    margin-left: -8%;
   }
 
   .parallax,
