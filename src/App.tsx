@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      <div className="w-screen bg-white text-black dark:bg-black dark:text-white lg:pt-[40px] xl:pt-[100px]">
+      <div className="w-screen bg-white text-black dark:bg-black dark:text-white pb-[40px] lg:pt-[40px] xl:pt-[100px]">
         <Navigation />
         <section id="me">
           <div className="absolute top-0 left-0 lg:hidden z-10">

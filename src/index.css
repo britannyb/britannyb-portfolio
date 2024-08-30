@@ -61,7 +61,7 @@ mark {
 
 button {
   border: 1px solid transparent;
-  padding: 10px;
+  padding: 6px;
   font-size: 20px;
   font-family: inherit;
   cursor: pointer;
@@ -121,13 +121,14 @@ header nav .active p {
 }
 
 .laptopGirl {
-  height: 800px;
+  height: 90vh;
 }
 
 #me {
   background: url("/backgrounds/graph.png") no-repeat center center;
   background-size: cover;
   padding: 50px 0;
+  height: 100vh;
 }
 
 #me-content {
@@ -142,7 +143,7 @@ header nav .active p {
 #me-images img {
   position: absolute;
   border-radius: 60px;
-  top: 50px;
+  bottom: 65%;
   left: -15px;
 }
 
