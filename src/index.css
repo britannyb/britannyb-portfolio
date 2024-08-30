@@ -128,7 +128,7 @@ header nav .active p {
   background: url("/backgrounds/graph.png") no-repeat center center;
   background-size: cover;
   padding: 50px 20px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #me-content {
