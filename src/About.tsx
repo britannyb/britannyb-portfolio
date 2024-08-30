@@ -1,6 +1,5 @@
 import { useRive, useStateMachineInput } from "rive-react";
 import HoverLink from "./components/HoverLink";
-import ScrollAnimation from "react-animate-on-scroll";
 
 function About() {
   const state_machine_nameC = "State Machine 1";
@@ -27,18 +26,8 @@ function About() {
             />
           </div>
           <div className="order-1 lg:order-2 text-center lg:text-left">
-            <ScrollAnimation
-              duration={5}
-              delay={1600}
-              animateIn="hinge"
-              initiallyVisible={true}
-            >
-              <h2>
-                <mark>about me</mark>
-              </h2>
-            </ScrollAnimation>
             <h2>
-              <mark>britanny</mark>
+              <mark>about me</mark>
             </h2>
             <br />
             <div className="lg:text-2xl text-left">
