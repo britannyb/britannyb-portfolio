@@ -66,7 +66,7 @@ function About() {
             <p className="text-center lg:text-left lg:ml-16">
               Fun fact: I made all the graphics in this web page. The doodle
               girls are inspired by a line of toys called “Peach Riot”. Also, if
-              you hover near the doodled girls, their eyes will follow your
+              you hover near the doodle girls, their eyes will follow your
               cursor. The backgrounds are from{" "}
               <a
                 href="https://www.freepik.com/"

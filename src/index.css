@@ -383,9 +383,12 @@ header nav .active p {
   margin: 0 auto;
 }
 
-#drawings-gallery img,
-#toy-gallery img {
+#drawings-gallery img {
   border-radius: 50px;
+}
+
+#toy-gallery img {
+  border-radius: 20px;
 }
 
 .article-content {

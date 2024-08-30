@@ -141,7 +141,7 @@ function Projects() {
             <h3>
               <mark>photography</mark>
             </h3>
-            <p>nendography (nendoroid photography) by me</p>
+            <p>nendoroid photography by me</p>
             <div
               id="toy-gallery"
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 py-12"
