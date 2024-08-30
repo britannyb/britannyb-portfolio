@@ -468,6 +468,7 @@ header nav .active p {
   .laptopGirl,
   .ipadGirl,
   .pencilGirl {
+    height: 70vh;
     width: 116%;
     object-fit: contain;
     margin-left: -8%;
