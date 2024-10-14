@@ -70,12 +70,20 @@ function Projects() {
             paletteColors={["65C2AF", "42A46A", "D78862", "202020"]}
           />
           <Project
+            logo="projects/7logo.png"
+            title="rest in paws design"
+            description="design for a website to memorialize animals."
+            link="https://www.figma.com/design/8dMUKVdnJbOF0bIyrHIcsT/petMemorial?node-id=0-1&t=SpWqvSzaZZwFY9je-1"
+            imageURL="projects/7.jpg"
+            display="flex-row-reverse"
+            paletteColors={["405D72", "758694", "F7E7DC", "FFF8F3"]}
+          />
+          <Project
             logo="projects/4logo.png"
             title="portfolio v1 website"
             description="the first version of my portfolio website featuring some of my college projects. It was made mostly using vanilla HTML, CSS, and Javascript + jQuery."
             link="https://britannyb.github.io/"
             imageURL="projects/4.jpg"
-            display="flex-row-reverse"
             paletteColors={["BEBEBE", "EC968D", "C774CD", "454545"]}
           />
           <Project
@@ -84,6 +92,7 @@ function Projects() {
             description="the second version of my portfolio website featuring some of my grad school projects. It was made with react, vite, and tailwind."
             link="https://britanny-portfolio.vercel.app/"
             imageURL="projects/5.jpg"
+            display="flex-row-reverse"
             paletteColors={["FEB9C6", "B96B85", "048399", "005067"]}
           />
           <Project
@@ -92,7 +101,6 @@ function Projects() {
             description="logo and poster design for a friend's booth that sells Japanese desserts."
             link="https://www.behance.net/gallery/178656975/Fuwa-Neko-(Snacks)-Menu-and-Poster-Designs"
             imageURL="projects/6.jpg"
-            display="flex-row-reverse"
             paletteColors={["D3EEE9", "69CBB2", "525AAA", "383F65"]}
           />
         </div>
