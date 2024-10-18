@@ -72,7 +72,7 @@ function Projects() {
           <Project
             logo="projects/7logo.png"
             title="rest in paws design"
-            description="design for a website to memorialize animals."
+            description="a simple animal memorialization webpage design. It was developed to demonstrate client and server side scripts."
             link="https://www.figma.com/design/8dMUKVdnJbOF0bIyrHIcsT/petMemorial?node-id=0-1&t=SpWqvSzaZZwFY9je-1"
             imageURL="projects/7.jpg"
             display="flex-row-reverse"
