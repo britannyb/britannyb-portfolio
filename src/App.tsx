@@ -72,7 +72,9 @@ function App() {
             </div>
             <div className="text-center xl:text-left">
               <h1>
-                <mark>britanny</mark>
+                <mark className="text-white bg-light-grey dark:text-dark-grey dark:bg-white">
+                  britanny
+                </mark>
               </h1>
               <p className="text-4xl subtitle">
                 <span>creativity + logic</span>
@@ -86,7 +88,9 @@ function App() {
         <section id="skills">
           <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
             <h2>
-              <mark>skills</mark>
+              <mark className="text-white bg-dark-grey dark:text-dark-grey dark:bg-white">
+                skills
+              </mark>
             </h2>
             <Skills />
           </ScrollAnimation>

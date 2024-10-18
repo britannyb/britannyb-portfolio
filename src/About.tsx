@@ -27,7 +27,9 @@ function About() {
           </div>
           <div className="order-1 lg:order-2 text-center lg:text-left">
             <h2>
-              <mark>about me</mark>
+              <mark className="text-white bg-dark-grey dark:text-dark-grey dark:bg-white">
+                about me
+              </mark>
             </h2>
             <br />
             <div className="lg:text-2xl text-left">

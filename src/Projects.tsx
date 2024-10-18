@@ -25,7 +25,9 @@ function Projects() {
           >
             <div className="text-center xl:text-right">
               <h2>
-                <mark>projects</mark>
+                <mark className="text-white bg-dark-grey dark:text-dark-grey dark:bg-white">
+                  projects
+                </mark>
               </h2>
               <p className="text-4xl">some of my favorite & recent projects</p>
             </div>
@@ -108,7 +110,9 @@ function Projects() {
         <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutLeft">
           <div className="lg:mt-24 project-text">
             <h3>
-              <mark>drawings</mark>
+              <mark className="text-white bg-light-grey dark:text-dark-grey dark:bg-white">
+                drawings
+              </mark>
             </h3>
             <p>drawings by me</p>
             <div
@@ -147,7 +151,9 @@ function Projects() {
         <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutLeft">
           <div className="lg:mt-24 project-text">
             <h3>
-              <mark>photography</mark>
+              <mark className="text-white bg-light-grey dark:text-dark-grey dark:bg-white">
+                photography
+              </mark>
             </h3>
             <p>nendoroid photography by me</p>
             <div
@@ -170,7 +176,9 @@ function Projects() {
         <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutLeft">
           <div className="lg:mt-24 project-text">
             <h3>
-              <mark>research</mark>
+              <mark className="text-white bg-light-grey dark:text-dark-grey dark:bg-white">
+                research
+              </mark>
             </h3>
             <p>journal article(s) by me</p>
             <div className="article-text py-12">
