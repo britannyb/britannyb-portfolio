@@ -115,10 +115,96 @@ header nav .active p {
 }
 
 #me {
+  position: relative;
   background: url("/backgrounds/graph.png") no-repeat center center;
   background-size: cover;
   padding: 50px 20px;
   min-height: 100vh;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    top: 0%;
+    right: 0%;
+  }
+  100% {
+    top: 100%;
+    right: 100%;
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes rotate-bottom {
+  0% {
+    transform: rotate(0deg);
+    bottom: 0%;
+    right: 20%;
+  }
+  100% {
+    bottom: 100%;
+    right: 80%;
+    transform: rotate(-90deg);
+  }
+}
+
+@keyframes rotate-left {
+  0% {
+    transform: rotate(0deg);
+    top: 0%;
+    left: 0%;
+  }
+  100% {
+    top: 100%;
+    left: 100%;
+    transform: rotate(-120deg);
+  }
+}
+
+@keyframes rotate-right {
+  0% {
+    transform: rotate(0deg);
+    left: 0%;
+    right: 20%;
+  }
+  100% {
+    bottom: 100%;
+    left: 80%;
+    transform: rotate(-90deg);
+  }
+}
+
+#toy,
+#controller,
+#ipad,
+#camera {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  opacity: 0.3;
+}
+
+#toy {
+  top: unset;
+  bottom: 0;
+  animation: rotate-bottom 8s infinite;
+}
+
+#controller {
+  animation: rotate-left 4s infinite;
+}
+
+#ipad {
+  animation: rotate 4s infinite;
+}
+
+#camera {
+  top: unset;
+  right: unset;
+  left: 0;
+  bottom: 0;
+  animation: rotate-right 6s infinite;
 }
 
 #me-content {
@@ -502,6 +588,13 @@ header nav .active p {
 }
 
 @media screen and (max-width: 600px) {
+  #toy,
+  #controller,
+  #ipad,
+  #camera {
+    width: 60%;
+  }
+
   #me,
   #skills,
   #projects,

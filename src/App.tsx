@@ -27,6 +27,16 @@ function App() {
       <div className="w-screen bg-white text-black dark:bg-black dark:text-white lg:pt-[40px] xl:pt-[100px]">
         <Navigation />
         <section id="me">
+          <div className="z-1">
+            <img src="images/toy.png" alt="toy image" id="toy" />
+            <img
+              src="images/controller.png"
+              alt="controller image"
+              id="controller"
+            />
+            <img src="images/ipad.png" alt="ipad image" id="ipad" />
+            <img src="images/camera.png" alt="camera image" id="camera" />
+          </div>
           <div className="absolute top-0 left-0 lg:hidden z-10">
             <ToggleButton />
           </div>
@@ -70,7 +80,7 @@ function App() {
                 className="hidden xl:inline"
               />
             </div>
-            <div className="text-center xl:text-left">
+            <div className="relative text-center xl:text-left">
               <h1>
                 <mark className="text-white bg-light-grey dark:text-dark-grey dark:bg-white">
                   britanny
@@ -83,7 +93,7 @@ function App() {
           </div>
         </section>
 
-        <div className="parallax"></div>
+        <div className="parallax relative"></div>
 
         <section id="skills">
           <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
