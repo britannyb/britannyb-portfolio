@@ -88,11 +88,11 @@ function About() {
               />{" "}
               <HoverLink
                 titleText="instagram"
-                linkContent="https://www.instagram.com/brytebunny/"
+                linkContent="https://www.instagram.com/sketchbryte/"
               />{" "}
               <HoverLink
                 titleText="youtube"
-                linkContent="https://www.youtube.com/@brytebunny"
+                linkContent="https://www.youtube.com/@sketchbryte"
               />
             </p>
           </div>
