@@ -593,6 +593,10 @@ header nav .active p {
   .parallaxB {
     min-height: 150px;
   }
+
+  #toy-gallery {
+    margin: 10px;
+  }
 }
 
 @media screen and (max-width: 600px) {
