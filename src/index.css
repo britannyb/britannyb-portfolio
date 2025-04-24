@@ -464,11 +464,27 @@ header nav .active p {
 }
 
 #drawings-gallery img {
-  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #toy-gallery img {
-  border-radius: 20px;
+  border: 15px solid white;
+  border-bottom: 50px solid white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.35s;
+}
+
+#toy-gallery img:nth-of-type(even) {
+  transform: rotate(6deg);
+}
+
+#toy-gallery img:nth-of-type(odd) {
+  transform: rotate(-6deg);
+}
+
+#toy-gallery img:hover {
+  transform: none;
+  z-index: 1;
 }
 
 .article-content {

@@ -29,7 +29,7 @@ function Projects() {
                   projects
                 </mark>
               </h2>
-              <p className="text-4xl">some of my favorite & recent projects</p>
+              <p className="text-4xl">some of my projects</p>
             </div>
             <div className="col-span-2">
               <RiveComponent
@@ -107,7 +107,7 @@ function Projects() {
           />
         </div>
 
-        <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutLeft">
+        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
           <div className="lg:mt-24 project-text">
             <h3>
               <mark className="text-white bg-light-grey dark:text-dark-grey dark:bg-white">
@@ -119,36 +119,20 @@ function Projects() {
               id="drawings-gallery"
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 py-12"
             >
-              <img
-                src="projects/art1.jpg"
-                alt="Alt fan art by me"
-                className="border-4 border-dashed border-black dark:border-white"
-              />
-              <img
-                src="projects/art2.jpg"
-                alt="You fan art by me"
-                className="border-4 border-dashed border-black dark:border-white"
-              />
-              <img
-                src="projects/art3.jpg"
-                alt="Portal fan art by me"
-                className="border-4 border-dashed border-black dark:border-white"
-              />
+              <img src="projects/art1.jpg" alt="Alt fan art by me" />
+              <img src="projects/art2.jpg" alt="You fan art by me" />
+              <img src="projects/art3.jpg" alt="Portal fan art by me" />
               <img
                 src="projects/art4.jpg"
                 alt="Johnny Silverhand fan art by me"
-                className="col-span-2 border-4 border-dashed border-black dark:border-white hidden lg:inline"
+                className="col-span-2 hidden lg:inline"
               />
-              <img
-                src="projects/art5.jpg"
-                alt="Vaultboy fan art by me"
-                className="border-4 border-dashed border-black dark:border-white"
-              />
+              <img src="projects/art5.jpg" alt="Vaultboy fan art by me" />
             </div>
           </div>
         </ScrollAnimation>
 
-        <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutLeft">
+        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
           <div className="lg:mt-24 project-text">
             <h3>
               <mark className="text-white bg-light-grey dark:text-dark-grey dark:bg-white">
@@ -173,7 +157,7 @@ function Projects() {
           </div>
         </ScrollAnimation>
 
-        <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutLeft">
+        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
           <div className="lg:mt-24 project-text">
             <h3>
               <mark className="text-white bg-light-grey dark:text-dark-grey dark:bg-white">
