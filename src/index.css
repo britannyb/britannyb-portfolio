@@ -531,7 +531,11 @@ header nav .active p {
   }
 
   #toggle-light p {
-    border: 2px solid black;
+    border: 2px dashed lightgray;
+  }
+
+  #toggle-dark p {
+    border: 2px dashed white;
   }
 
   #drawings-gallery,
