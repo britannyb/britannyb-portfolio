@@ -120,14 +120,14 @@ function Projects() {
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 py-12"
             >
               <img src="projects/art1.jpg" alt="Alt fan art by me" />
-              <img src="projects/art2.jpg" alt="Portal fan art by me" />
-              <img src="projects/art3.jpg" alt="Nuka Girl fan art by me" />
               <img
-                src="projects/art4.jpg"
+                src="projects/art2.jpg"
                 alt="Cyberpunk Edgerunners fan art by me"
               />
-              <img src="projects/art5.jpg" alt="You fan art by me" />
-              <img src="projects/art6.jpg" alt="Nezuko fan art by me" />
+              <img src="projects/art3.jpg" alt="Portal fan art by me" />
+              <img src="projects/art4.jpg" alt="You fan art by me" />
+              <img src="projects/art5.jpg" alt="Nuka Girl fan art by me" />
+              <img src="projects/art6.jpg" alt="Dogs art by me" />
               <img
                 src="projects/art7.jpg"
                 alt="Johnny Silverhand fan art by me"
