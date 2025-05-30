@@ -66,7 +66,7 @@ function Projects() {
           <Project
             logo="projects/2logo.png"
             title="motiveat web app"
-            description="my capstone project which is a meal planner that allows users to scan ingredients using their camera. It applies machine learning through Tensorflow.js."
+            description="my capstone project which is a meal planner that allows users to scan ingredients using their camera. It applies machine learning through Tensorflow.js (only works on certain devices)."
             link="https://motiveat.vercel.app/"
             imageURL="projects/2.jpg"
             paletteColors={["65C2AF", "42A46A", "D78862", "202020"]}
