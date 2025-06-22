@@ -85,6 +85,10 @@ function About() {
               <HoverLink
                 titleText="behance profile"
                 linkContent="https://www.behance.net/britannyb"
+              />{" "}
+              <HoverLink
+                titleText="rive profile"
+                linkContent="https://rive.app/@britannyb/"
               />
             </p>
           </div>
