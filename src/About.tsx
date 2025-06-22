@@ -83,11 +83,11 @@ function About() {
             <p id="links">
               more by me:{" "}
               <HoverLink
-                titleText="behance profile"
+                titleText="behance"
                 linkContent="https://www.behance.net/britannyb"
               />{" "}
               <HoverLink
-                titleText="rive profile"
+                titleText="rive"
                 linkContent="https://rive.app/@britannyb/"
               />
             </p>
