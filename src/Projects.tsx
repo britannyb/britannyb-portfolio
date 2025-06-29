@@ -167,23 +167,23 @@ function Projects() {
               ></ImageModal>
               <ImageModal
                 imageUrl="projects/toy2.jpg"
-                altContent="Isabelle nendography"
+                altContent="Johnny Silverhand nendography"
               ></ImageModal>
               <ImageModal
                 imageUrl="projects/toy3.jpg"
-                altContent="Kirby nendography"
+                altContent="Isabelle nendography"
               ></ImageModal>
               <ImageModal
                 imageUrl="projects/toy4.jpg"
-                altContent="Bayonetta nendography"
+                altContent="Kirby nendography"
               ></ImageModal>
               <ImageModal
                 imageUrl="projects/toy5.jpg"
-                altContent="Doom Slayer nendography"
+                altContent="Eleven nendography"
               ></ImageModal>
               <ImageModal
                 imageUrl="projects/toy6.jpg"
-                altContent="Johnny Silverhand nendography"
+                altContent="Miku Nakano nendography"
               ></ImageModal>
             </div>
           </div>
