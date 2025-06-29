@@ -458,7 +458,7 @@ header nav .active p {
 
 .project-img {
   max-width: 600px;
-  max-height: fit-content;
+  max-height: 98%;
   border-radius: 100px;
 }
 
