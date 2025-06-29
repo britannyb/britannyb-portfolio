@@ -18,7 +18,7 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
 
   const modal = (
     <div
-      className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center"
+      className="modal fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center"
       onClick={() => setIsOpen(false)}
     >
       <div className="relative">
