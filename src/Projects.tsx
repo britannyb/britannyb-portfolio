@@ -3,6 +3,8 @@ import Project from "./components/Project";
 import HoverLink from "./components/HoverLink";
 import "animate.css/animate.compat.css";
 import ScrollAnimation from "react-animate-on-scroll";
+import DrawingModal from "./components/DrawingModal";
+import ImageModal from "./components/ImageModal";
 
 function Projects() {
   const state_machine_nameB = "State Machine 1";
@@ -117,23 +119,32 @@ function Projects() {
             <p>drawings by me</p>
             <div
               id="drawings-gallery"
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 py-12"
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 py-12 px-4 md:px-0"
             >
-              <img src="projects/art1.jpg" alt="Alt fan art by me" />
-              <img
-                src="projects/art2.jpg"
-                alt="Cyberpunk Edgerunners fan art by me"
-              />
-              <img src="projects/art3.jpg" alt="Portal fan art by me" />
-              <img src="projects/art4.jpg" alt="You fan art by me" />
-              <img src="projects/art5.jpg" alt="Nuka Girl fan art by me" />
-              <img src="projects/art6.jpg" alt="Dogs art by me" />
-              <img
-                src="projects/art7.jpg"
-                alt="Johnny Silverhand fan art by me"
-                className="col-span-2 hidden lg:inline"
-              />
-              <img src="projects/art8.jpg" alt="Vaultboy fan art by me" />
+              <DrawingModal
+                imageUrl="projects/art1.jpg"
+                altContent="Alt fan art by me"
+              ></DrawingModal>
+              <DrawingModal
+                imageUrl="projects/art2.jpg"
+                altContent="Cyberpunk Edgerunners fan art by me"
+              ></DrawingModal>
+              <DrawingModal
+                imageUrl="projects/art3.jpg"
+                altContent="Portal fan art by me"
+              ></DrawingModal>
+              <DrawingModal
+                imageUrl="projects/art4.jpg"
+                altContent="You fan art by me"
+              ></DrawingModal>
+              <DrawingModal
+                imageUrl="projects/art5.jpg"
+                altContent="Nuka Girl fan art by me"
+              ></DrawingModal>
+              <DrawingModal
+                imageUrl="projects/art6.jpg"
+                altContent="Dogs art by me"
+              ></DrawingModal>
             </div>
           </div>
         </ScrollAnimation>
@@ -150,15 +161,30 @@ function Projects() {
               id="toy-gallery"
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 py-12"
             >
-              <img src="projects/toy1.jpg" alt="Hatsune Miku nendography" />
-              <img src="projects/toy2.jpg" alt="Isabelle nendography" />
-              <img src="projects/toy3.jpg" alt="Kirby nendography" />
-              <img src="projects/toy4.jpg" alt="Bayonetta nendography" />
-              <img src="projects/toy5.jpg" alt="Doom Slayer nendography" />
-              <img
-                src="projects/toy6.jpg"
-                alt="Johnny Silverhand nendography"
-              />
+              <ImageModal
+                imageUrl="projects/toy1.jpg"
+                altContent="Hatsune Miku nendography"
+              ></ImageModal>
+              <ImageModal
+                imageUrl="projects/toy2.jpg"
+                altContent="Isabelle nendography"
+              ></ImageModal>
+              <ImageModal
+                imageUrl="projects/toy3.jpg"
+                altContent="Kirby nendography"
+              ></ImageModal>
+              <ImageModal
+                imageUrl="projects/toy4.jpg"
+                altContent="Bayonetta nendography"
+              ></ImageModal>
+              <ImageModal
+                imageUrl="projects/toy5.jpg"
+                altContent="Doom Slayer nendography"
+              ></ImageModal>
+              <ImageModal
+                imageUrl="projects/toy6.jpg"
+                altContent="Johnny Silverhand nendography"
+              ></ImageModal>
             </div>
           </div>
         </ScrollAnimation>
