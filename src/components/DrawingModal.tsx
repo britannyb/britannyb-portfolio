@@ -21,7 +21,7 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
       className="modal fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center"
       onClick={() => setIsOpen(false)}
     >
-      <div className="relative h-[100vh]">
+      <div className="relative h-[100vh] max-h-fc md:max-h-[800px]">
         <button
           onClick={() => setIsOpen(false)}
           className="absolute top-2 right-2 text-white m-2 hover:scale-125"
@@ -32,7 +32,7 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
         <img
           src={imageUrl}
           alt={altContent}
-          className="object-contain p-2 w-full h-full object-cover"
+          className="object-contain p-2 object-contain"
           onClick={(e) => e.stopPropagation()}
         />
       </div>
