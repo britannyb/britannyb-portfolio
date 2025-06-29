@@ -21,7 +21,7 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
       className="modal fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center"
       onClick={() => setIsOpen(false)}
     >
-      <div className="relative h-[100vh] max-h-fc md:max-h-[700px] m-2 md:m-0">
+      <div className="relative m-2 md:m-0">
         <button
           onClick={() => setIsOpen(false)}
           className="absolute top-2 right-2 text-white m-2 hover:scale-125"
