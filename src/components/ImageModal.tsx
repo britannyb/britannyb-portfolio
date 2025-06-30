@@ -24,7 +24,7 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
       <div className="relative m-2 md:m-0">
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute top-2 right-2 text-white m-2 hover:scale-125"
+          className="absolute top-2 right-2 text-white m-1 md:m-2 hover:scale-125"
           aria-label="Close image"
         >
           ✕
