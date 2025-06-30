@@ -56,7 +56,6 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
           className="absolute h-2 w-2 bottom-8 right-8 cursor-pointer p-2"
           onClick={() => setIsOpen(true)}
         >
-          {/* <p className="relative text-white">🔍︎</p> */}
           <Glass />
         </div>
       </div>
