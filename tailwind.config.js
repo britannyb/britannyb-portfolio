@@ -10,13 +10,28 @@ module.exports = {
       },
       keyframes: {
         glitch: {
-          "0%, 100%": { textTransform: "none" },
-          "20%, 40%, 60%, 80%": { textTransform: "uppercase" },
-          "10%, 30%, 50%, 70%, 90%": { textTransform: "lowercase" },
+          "0%, 100%": {
+            textTransform: "none",
+          },
+          "20%, 40%, 60%, 80%": {
+            textTransform: "uppercase",
+          },
+          "10%, 30%, 50%, 70%, 90%": {
+            textTransform: "lowercase",
+          },
+        },
+        shake: {
+          "0%": {
+            transform: "translateY(2px)",
+          },
+          "100%": {
+            transform: "translateY(0)",
+          },
         },
       },
       animation: {
-        glitch: "glitch 1.5s infinite",
+        glitch: "glitch 1s infinite",
+        shake: "shake 0.5s infinite",
       },
     },
   },

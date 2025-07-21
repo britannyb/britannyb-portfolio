@@ -23,14 +23,21 @@ body {
 }
 
 h1 {
-  font-size: 6em;
-  font-weight: 700;
+  font-size: 4em;
 }
 
 h2,
 h3 {
-  font-size: 4.2em;
-  font-weight: 700;
+  font-size: 3.2em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Victor Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 10px;
 }
 
 h1 mark::before,

@@ -21,7 +21,7 @@ const GlitchText: React.FC<GlitchTextProps> = ({ text }) => {
         }
         return !prev;
       });
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(randomGlitchInterval);
   }, [text]);
@@ -36,13 +36,12 @@ const GlitchText: React.FC<GlitchTextProps> = ({ text }) => {
             className={
               shouldGlitch && glitchActive
                 ? "inline-block animate-glitch"
-                : "inline-block"
+                : "inline-block animate-shake"
             }
             style={{
               animationDelay: `${Math.random() * 1.5}s`,
               animationIterationCount: glitchActive ? "infinite" : "1",
-            }}
-          >
+            }}>
             {char}
           </span>
         );
