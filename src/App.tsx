@@ -10,6 +10,7 @@ import "animate.css/animate.compat.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import BottomNavigation from "./components/BottomNavigation";
 import ToggleButton from "./components/ToggleButton";
+import GlitchText from "./components/GlitchText";
 
 function App() {
   const state_machine_name = "State Machine 1";
@@ -83,7 +84,7 @@ function App() {
             <div className="relative text-center xl:text-left">
               <h1>
                 <mark className="text-white bg-light-grey dark:text-dark-grey dark:bg-white">
-                  britanny
+                  <GlitchText text="britanny" />
                 </mark>
               </h1>
               <p className="text-4xl subtitle">
@@ -99,7 +100,7 @@ function App() {
           <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
             <h2>
               <mark className="text-white bg-dark-grey dark:text-dark-grey dark:bg-white">
-                skills
+                <GlitchText text="skills" />
               </mark>
             </h2>
             <Skills />

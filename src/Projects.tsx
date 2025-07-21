@@ -5,6 +5,7 @@ import "animate.css/animate.compat.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import DrawingModal from "./components/DrawingModal";
 import ImageModal from "./components/ImageModal";
+import GlitchText from "./components/GlitchText";
 
 function Projects() {
   const state_machine_nameB = "State Machine 1";
@@ -28,7 +29,7 @@ function Projects() {
             <div className="text-center xl:text-right">
               <h2>
                 <mark className="text-white bg-dark-grey dark:text-dark-grey dark:bg-white">
-                  projects
+                  <GlitchText text="projects" />
                 </mark>
               </h2>
               <p className="text-4xl">some of my projects</p>
@@ -113,7 +114,7 @@ function Projects() {
           <div className="lg:mt-24 project-text">
             <h3>
               <mark className="text-white bg-light-grey dark:text-dark-grey dark:bg-white">
-                drawings
+                <GlitchText text="drawings" />
               </mark>
             </h3>
             <p>drawings by me</p>
@@ -153,7 +154,7 @@ function Projects() {
           <div className="lg:mt-24 project-text">
             <h3>
               <mark className="text-white bg-light-grey dark:text-dark-grey dark:bg-white">
-                photography
+                <GlitchText text="photography" />
               </mark>
             </h3>
             <p>nendoroid photography by me</p>
@@ -193,7 +194,7 @@ function Projects() {
           <div className="lg:mt-24 project-text">
             <h3>
               <mark className="text-white bg-light-grey dark:text-dark-grey dark:bg-white">
-                research
+                <GlitchText text="research" />
               </mark>
             </h3>
             <p>journal article(s) by me</p>

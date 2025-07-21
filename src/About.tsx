@@ -1,5 +1,6 @@
 import { useRive, useStateMachineInput } from "rive-react";
 import HoverLink from "./components/HoverLink";
+import GlitchText from "./components/GlitchText";
 
 function About() {
   const state_machine_nameC = "State Machine 1";
@@ -28,7 +29,7 @@ function About() {
           <div className="order-1 lg:order-2 text-center lg:text-left">
             <h2>
               <mark className="text-white bg-dark-grey dark:text-dark-grey dark:bg-white">
-                about me
+                <GlitchText text="about" />
               </mark>
             </h2>
             <br />
