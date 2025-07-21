@@ -18,8 +18,7 @@ function About() {
       <div>
         <div
           id="about-content"
-          className="grid grid-cols-1 lg:grid-cols-2 items-center"
-        >
+          className="grid grid-cols-1 lg:grid-cols-2 items-center">
           <div className="order-2 lg:order-1">
             <RiveComponent
               onMouseOver={() => onHoverInputC?.fire()}
@@ -44,12 +43,10 @@ function About() {
               <p>I am:</p>
               <ul>
                 <li>
-                  ⦿ passionate in everything related to Information Technology.
+                  ⦿ a bachelor [Cum Laude] and master [Meritus] in Information
+                  Technology (IT) degree holder.
                 </li>
-                <li>
-                  ⦿ a bachelor and master in IT degree holder (awarded Cum Laude
-                  for both).
-                </li>
+                <li>⦿ passionate in everything related to IT.</li>
               </ul>
               <p>
                 Aside from programming, designing, and doing creative work; I
@@ -74,8 +71,7 @@ function About() {
               <a
                 href="https://www.freepik.com/"
                 target="_blank"
-                className="underline"
-              >
+                className="underline">
                 Freepik
               </a>
               .
