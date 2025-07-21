@@ -74,11 +74,6 @@ button {
   transition: all 0.3s ease-in-out;
 }
 
-#toggle-light p:hover {
-  color: white;
-  background-color: black;
-}
-
 #toggle-dark p {
   border-radius: 100px;
   border: 2px solid white;
@@ -89,9 +84,9 @@ button {
   transition: all 0.3s ease-in-out;
 }
 
+#toggle-light p:hover,
 #toggle-dark p:hover {
-  color: black;
-  background-color: white;
+  padding: 3px 16px;
 }
 
 #toggle-light img,
