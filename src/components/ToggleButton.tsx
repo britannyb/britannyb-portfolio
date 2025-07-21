@@ -23,18 +23,26 @@ const ToggleButton = () => {
       <button onClick={toggleTheme} className="ml-auto">
         <div
           id="toggle-light"
-          className="flex flex-wrap items-center inline dark:hidden"
-        >
-          <img src="images/controller.png" width="90px" alt="controller icon" />
+          className="flex flex-wrap items-center inline dark:hidden">
+          <img
+            className="hover:animate-pulse"
+            src="images/controller.png"
+            width="90px"
+            alt="controller icon"
+          />
           <p>
             <span>light mode</span>
           </p>
         </div>
         <div
           id="toggle-dark"
-          className="flex flex-wrap items-center flex-row-reverse hidden dark:flex"
-        >
-          <img src="images/controller.png" width="90px" alt="controller icon" />
+          className="flex flex-wrap items-center flex-row-reverse hidden dark:flex">
+          <img
+            className="hover:animate-pulse"
+            src="images/controller.png"
+            width="90px"
+            alt="controller icon"
+          />
           <p>
             <span>dark mode</span>
           </p>
