@@ -1,6 +1,7 @@
 import ReactDOM from "react-dom";
 import { useState, useEffect } from "react";
 import Glass from "./Glass";
+import TiltDrawing from "./TiltDrawing";
 
 interface ImageModal {
   imageUrl: string;
@@ -20,23 +21,12 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
   const modal = (
     <div
       className="modal fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center"
-      onClick={() => setIsOpen(false)}
-    >
-      <div className="relative">
-        <button
-          onClick={() => setIsOpen(false)}
-          className="absolute top-2 right-2 text-white m-1 md:m-2 hover:scale-125"
-          aria-label="Close image"
-        >
-          ✕
-        </button>
-        <img
-          src={imageUrl}
-          alt={altContent}
-          className="border-white border-2 md:border-4 object-contain md:m-2 object-contain"
-          onClick={(e) => e.stopPropagation()}
-        />
-      </div>
+      onClick={() => setIsOpen(false)}>
+      <TiltDrawing
+        imageUrl={imageUrl}
+        altContent={altContent}
+        setIsOpen={setIsOpen}
+      />
     </div>
   );
 
@@ -54,8 +44,7 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
         <div
           id="zoom"
           className="absolute h-2 w-2 bottom-8 right-8 cursor-pointer p-2"
-          onClick={() => setIsOpen(true)}
-        >
+          onClick={() => setIsOpen(true)}>
           <Glass />
         </div>
       </div>

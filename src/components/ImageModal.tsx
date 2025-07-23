@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom";
 import { useState, useEffect } from "react";
+import TiltImage from "./TiltImage";
 
 interface ImageModal {
   imageUrl: string;
@@ -19,24 +20,12 @@ const ImageModal = ({ imageUrl, altContent }: ImageModal) => {
   const modal = (
     <div
       className="modal fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center"
-      onClick={() => setIsOpen(false)}
-    >
-      <div className="relative m-2 md:m-0">
-        <button
-          onClick={() => setIsOpen(false)}
-          className="absolute top-2 right-2 text-white m-1 md:m-2 hover:scale-125"
-          aria-label="Close image"
-        >
-          ✕
-        </button>
-
-        <img
-          src={imageUrl}
-          alt={altContent}
-          className="bg-white p-2 md:p-3 pb-14 md:pb-20 object-contain"
-          onClick={(e) => e.stopPropagation()}
-        />
-      </div>
+      onClick={() => setIsOpen(false)}>
+      <TiltImage
+        imageUrl={imageUrl}
+        altContent={altContent}
+        setIsOpen={setIsOpen}
+      />
     </div>
   );
 

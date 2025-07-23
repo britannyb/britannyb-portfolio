@@ -56,6 +56,13 @@ mark {
   padding: 10px;
 }
 
+.handwritten {
+  font-family: "Victor Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 12px;
+}
+
 button {
   border: 1px solid transparent;
   padding: 6px;
