@@ -6,6 +6,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import DrawingModal from "./components/DrawingModal";
 import ImageModal from "./components/ImageModal";
 import GlitchText from "./components/GlitchText";
+import LinkIcon from "./components/LinkIcon";
 
 function Projects() {
   const state_machine_nameB = "State Machine 1";
@@ -55,6 +56,7 @@ function Projects() {
             description="a desktop interface for an appliction used for online health consultations."
             link="https://www.figma.com/design/OblFEXcUSwfGDll900FlOA/HelpCare?node-id=6-3"
             imageURL="projects/1.jpg"
+            alt="helpcare sample pages"
             paletteColors={["D6F3D5", "86D19B", "539B9D", "525252"]}
           />
           <Project
@@ -63,6 +65,7 @@ function Projects() {
             description="a form interface designed for an application concerned with vaccination distribution."
             link="https://www.figma.com/design/dWQSisktmgE2u9Wyz8EzMA/VaccineHelp?node-id=0-1&t=A9gLtmoCtNvjfU09-0"
             imageURL="projects/3.jpg"
+            alt="vaccinehelp page designs"
             display="flex-row-reverse"
             paletteColors={["DDEEF5", "50C0ED", "0679D6", "525252"]}
           />
@@ -72,6 +75,7 @@ function Projects() {
             description="my capstone project which is a meal planner that allows users to scan ingredients using their camera. It applies machine learning through Tensorflow.js (only works on certain devices)."
             link="https://motiveat.vercel.app/"
             imageURL="projects/2.jpg"
+            alt="motiveat mobile interfaces"
             paletteColors={["65C2AF", "42A46A", "D78862", "202020"]}
           />
           <Project
@@ -80,6 +84,7 @@ function Projects() {
             description="a simple animal memorialization webpage design. It was developed to demonstrate client and server side scripts."
             link="https://www.figma.com/design/8dMUKVdnJbOF0bIyrHIcsT/petMemorial?node-id=0-1&t=SpWqvSzaZZwFY9je-1"
             imageURL="projects/7.jpg"
+            alt="rest in paws designs"
             display="flex-row-reverse"
             paletteColors={["405D72", "758694", "F7E7DC", "FFF8F3"]}
           />
@@ -89,6 +94,7 @@ function Projects() {
             description="the first version of my portfolio website featuring some of my college projects. It was made mostly using vanilla HTML, CSS, and Javascript + jQuery."
             link="https://britannyb.github.io/"
             imageURL="projects/4.jpg"
+            alt="portfolio v1 initial prototype"
             paletteColors={["BEBEBE", "EC968D", "C774CD", "454545"]}
           />
           <Project
@@ -97,6 +103,7 @@ function Projects() {
             description="the second version of my portfolio website featuring some of my grad school projects. It was made with react, vite, and tailwind."
             link="https://britanny-portfolio.vercel.app/"
             imageURL="projects/5.jpg"
+            alt="portfolio v2 initial prototype"
             display="flex-row-reverse"
             paletteColors={["FEB9C6", "B96B85", "048399", "005067"]}
           />
@@ -106,6 +113,7 @@ function Projects() {
             description="logo and poster design for a friend's booth that sells Japanese desserts."
             link="https://www.behance.net/gallery/178656975/Fuwa-Neko-(Snacks)-Menu-and-Poster-Designs"
             imageURL="projects/6.jpg"
+            alt="fuwa neko poster designs"
             paletteColors={["D3EEE9", "69CBB2", "525AAA", "383F65"]}
           />
         </div>
@@ -204,14 +212,18 @@ function Projects() {
                   An Overview of the Networking Issues of Cloud Gaming: A
                   Literature Review
                 </p>
-                <p>
-                  links:{" "}
+                <p className="flex sm:flex-row flex-col justify-center items-center">
+                  <span className="flex justify-center items-center">
+                    <LinkIcon />
+                    <span className="block sm:hidden">links:</span>{" "}
+                  </span>
                   <HoverLink
                     titleText="researchgate"
                     linkContent="https://www.researchgate.net/publication/366602157_An_Overview_of_the_Networking_Issues_of_Cloud_Gaming_A_Literature_Review"
-                  />{" "}
+                  />
+                  <span className="mx-2 hidden sm:block">&</span>
                   <HoverLink
-                    titleText="journal link"
+                    titleText="journal article"
                     linkContent="https://ejournal.pnc.ac.id/index.php/jinita/article/view/1581"
                   />
                 </p>

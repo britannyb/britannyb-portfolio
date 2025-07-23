@@ -477,9 +477,9 @@ header nav .active p {
 
 .project-info a,
 .article-text a {
-  padding: 10px;
+  padding: 5px 10px;
   border-radius: 50px;
-  line-height: 3;
+  margin: 10px 0;
 }
 
 .project-logo {
@@ -733,12 +733,6 @@ header nav .active p {
   .project-img {
     max-width: 300px;
     border-radius: 40px;
-  }
-
-  .project-info a,
-  .article-text a,
-  #links a {
-    line-height: 2.8;
   }
 
   #skills h2,
