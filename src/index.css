@@ -386,7 +386,7 @@ header nav .active p {
   padding: 120px 0;
 }
 
-#projects:before {
+#projects::before {
   content: " ";
   display: block;
   position: absolute;
@@ -425,7 +425,7 @@ header nav .active p {
   padding: 120px 0;
 }
 
-#about:before {
+#about::before {
   content: " ";
   display: block;
   position: absolute;
@@ -605,7 +605,8 @@ header nav .active p {
   }
 
   .parallax,
-  .parallaxB {
+  .parallaxB,
+  #projects::before {
     background-attachment: scroll;
   }
 }
