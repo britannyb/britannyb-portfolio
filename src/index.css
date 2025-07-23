@@ -605,9 +605,12 @@ header nav .active p {
   }
 
   .parallax,
-  .parallaxB,
-  #projects::before {
+  .parallaxB {
     background-attachment: scroll;
+  }
+
+  #projects::before {
+    content: none;
   }
 }
 
