@@ -52,7 +52,7 @@ function Projects() {
           <Project
             logo="projects/1logo.png"
             title="helpcare prototype"
-            description="a desktop interface for an appliction used for online health consultations."
+            description="a desktop interface for an application used for online health consultations."
             link="https://www.figma.com/design/OblFEXcUSwfGDll900FlOA/HelpCare?node-id=6-3"
             imageURL="projects/1.jpg"
             alt="helpcare sample pages"
