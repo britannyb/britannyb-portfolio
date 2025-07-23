@@ -104,7 +104,15 @@ function App() {
 
         <div className="parallax relative"></div>
 
-        <section id="skills">
+        <section id="skills" className="skills">
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover opacity-15 dark:opacity-10"
+            src="backgrounds/topography.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
           <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
             <h2>
               <mark className="text-white bg-dark-grey dark:text-dark-grey dark:bg-white">
@@ -121,7 +129,15 @@ function App() {
 
         <div className="parallaxB"></div>
 
-        <section id="about">
+        <section id="about" className="relative">
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover opacity-60 dark:opacity-20"
+            src="backgrounds/crumple.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
           <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
             <About />
           </ScrollAnimation>

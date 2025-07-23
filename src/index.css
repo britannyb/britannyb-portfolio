@@ -261,19 +261,7 @@ header nav .active p {
 #skills {
   position: relative;
   padding: 150px 0;
-}
-
-#skills:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.95;
-  background: url("/backgrounds/topography.jpg") no-repeat center center;
-  background-size: cover;
+  background-color: #000000;
 }
 
 #skills-content {
@@ -379,7 +367,7 @@ header nav .active p {
 
 #skill-gray::after {
   content: "";
-  border: 4px dashed #000000;
+  border: 4px dashed #242424;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -394,7 +382,22 @@ header nav .active p {
 }
 
 #projects {
+  position: relative;
   padding: 120px 0;
+}
+
+#projects:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background: url("/backgrounds/grid.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #project-content {
@@ -418,9 +421,21 @@ header nav .active p {
 }
 
 #about {
-  background: url("/backgrounds/lines.png") no-repeat center center;
-  background-size: cover;
+  position: relative;
   padding: 120px 0;
+}
+
+#about:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.95;
+  background: url("/backgrounds/lines.png") no-repeat left center;
+  background-size: cover;
 }
 
 #about-content {

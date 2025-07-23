@@ -18,7 +18,8 @@ function About() {
       <div>
         <div
           id="about-content"
-          className="grid grid-cols-1 lg:grid-cols-2 items-center">
+          className="grid grid-cols-1 lg:grid-cols-2 items-center"
+        >
           <div className="order-2 lg:order-1">
             <RiveComponent
               onMouseOver={() => onHoverInputC?.fire()}
@@ -67,14 +68,7 @@ function About() {
               Fun fact: I made all the graphics in this web page. The doodle
               girls are inspired by a line of toys called “Peach Riot”. Also, if
               you hover near the doodle girls, their eyes will follow your
-              cursor. The backgrounds are from{" "}
-              <a
-                href="https://www.freepik.com/"
-                target="_blank"
-                className="underline">
-                Freepik
-              </a>
-              .
+              cursor. The backgrounds are from Freepik, Pexels, and Vecteezy.
             </p>
             <br />
             <p id="links">
