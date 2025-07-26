@@ -43,7 +43,12 @@ function Project({
 }: ProjectContentProps) {
   return (
     <>
-      <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutLeft">
+      <ScrollAnimation
+        animateIn={
+          display === "flex-row-reverse" ? "fadeInRight" : "fadeInLeft"
+        }
+        animateOnce={true}
+      >
         <div className={`xl:flex gap-4 items-center project-info ${display}`}>
           <div>
             <img
