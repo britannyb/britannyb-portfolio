@@ -1,6 +1,7 @@
 import "./App.css";
 import "./index.css";
 import Navigation from "./components/Navigation";
+import { useState } from "react";
 import { useRive, useStateMachineInput } from "rive-react";
 import Skills from "./Skills";
 import Projects from "./Projects";
@@ -22,6 +23,11 @@ function App() {
   });
 
   const onHoverInput = useStateMachineInput(rive, state_machine_name);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+
+  const handleVideoLoaded = () => {
+    setIsVideoLoaded(true);
+  };
 
   return (
     <>
@@ -105,14 +111,24 @@ function App() {
         <div className="parallax relative"></div>
 
         <section id="skills" className="skills">
-          <video
-            className="absolute top-0 left-0 w-full h-full object-cover opacity-15 dark:opacity-10"
-            src="backgrounds/topography.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
+          <div className="w-full h-full">
+            {!isVideoLoaded && (
+              <img
+                src="backgrounds/topography.jpg"
+                alt="Topography background video placeholder"
+                className="absolute top-0 left-0 w-full h-full object-cover"
+              />
+            )}
+            <video
+              className="absolute top-0 left-0 w-full h-full object-cover opacity-15 dark:opacity-10"
+              src="backgrounds/topography.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              onLoadedData={handleVideoLoaded}
+            />
+          </div>
           <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
             <h2>
               <mark className="text-white bg-dark-grey dark:text-dark-grey dark:bg-white">
