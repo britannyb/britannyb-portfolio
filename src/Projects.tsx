@@ -25,8 +25,7 @@ function Projects() {
         <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
           <div
             id="project-content"
-            className="grid grid-cols-1 xl:grid-cols-4 items-center"
-          >
+            className="grid grid-cols-1 xl:grid-cols-4 items-center">
             <div className="text-center xl:text-right">
               <h2>
                 <mark className="text-white bg-dark-grey dark:text-dark-grey dark:bg-white">
@@ -128,32 +127,25 @@ function Projects() {
             <p>drawings by me</p>
             <div
               id="drawings-gallery"
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 py-12 px-4 md:px-0"
-            >
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 py-12 px-4 md:px-0">
               <DrawingModal
                 imageUrl="projects/art1.jpg"
-                altContent="Alt fan art by me"
-              ></DrawingModal>
+                altContent="Alt fan art by me"></DrawingModal>
               <DrawingModal
                 imageUrl="projects/art2.jpg"
-                altContent="Cyberpunk Edgerunners fan art by me"
-              ></DrawingModal>
+                altContent="Cyberpunk Edgerunners fan art by me"></DrawingModal>
               <DrawingModal
                 imageUrl="projects/art3.jpg"
-                altContent="Portal fan art by me"
-              ></DrawingModal>
+                altContent="Portal fan art by me"></DrawingModal>
               <DrawingModal
                 imageUrl="projects/art4.jpg"
-                altContent="You fan art by me"
-              ></DrawingModal>
+                altContent="You fan art by me"></DrawingModal>
               <DrawingModal
                 imageUrl="projects/art5.jpg"
-                altContent="Nuka Girl fan art by me"
-              ></DrawingModal>
+                altContent="Nuka Girl fan art by me"></DrawingModal>
               <DrawingModal
                 imageUrl="projects/art6.jpg"
-                altContent="Dogs art by me"
-              ></DrawingModal>
+                altContent="Dogs art by me"></DrawingModal>
             </div>
           </div>
         </ScrollAnimation>
@@ -168,32 +160,25 @@ function Projects() {
             <p>nendoroid photography by me</p>
             <div
               id="toy-gallery"
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 py-12"
-            >
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-4 py-12">
               <ImageModal
                 imageUrl="projects/toy1.jpg"
-                altContent="hatsune miku's toy room"
-              ></ImageModal>
+                altContent="hatsune miku's toy room"></ImageModal>
               <ImageModal
                 imageUrl="projects/toy2.jpg"
-                altContent="johnny silverhand & burger"
-              ></ImageModal>
+                altContent="johnny silverhand & burger"></ImageModal>
               <ImageModal
                 imageUrl="projects/toy3.jpg"
-                altContent="isabelle's flower shop"
-              ></ImageModal>
+                altContent="isabelle's flower shop"></ImageModal>
               <ImageModal
                 imageUrl="projects/toy4.jpg"
-                altContent="kirby's pizzeria"
-              ></ImageModal>
+                altContent="kirby's pizzeria"></ImageModal>
               <ImageModal
                 imageUrl="projects/toy5.jpg"
-                altContent="eleven & eggos"
-              ></ImageModal>
+                altContent="eleven & eggos"></ImageModal>
               <ImageModal
                 imageUrl="projects/toy6.jpg"
-                altContent="miku nakano & groceries"
-              ></ImageModal>
+                altContent="miku nakano & groceries"></ImageModal>
             </div>
           </div>
         </ScrollAnimation>
