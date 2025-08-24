@@ -24,8 +24,7 @@ function ColorPalette({ colors }: ColorProps) {
       <div
         key={i}
         style={{ backgroundColor: `#${color}` }}
-        className="w-10 h-10 rounded-full inline-block -ml-4"
-      ></div>
+        className="w-10 h-10 rounded-full inline-block -ml-4"></div>
     );
   });
   return <div className="ml-4">{colorsArray}</div>;
@@ -43,13 +42,12 @@ function Project({
 }: ProjectContentProps) {
   return (
     <>
-      <ScrollAnimation
-        animateIn={
-          display === "flex-row-reverse" ? "fadeInRight" : "fadeInLeft"
-        }
-        animateOnce={true}
-      >
-        <div className={`xl:flex gap-4 items-center project-info ${display}`}>
+      <div className={`xl:flex gap-4 items-center project-info ${display}`}>
+        <ScrollAnimation
+          animateIn={
+            display === "flex-row-reverse" ? "fadeInRight" : "fadeInLeft"
+          }
+          animateOnce={true}>
           <div>
             <img
               src={logo}
@@ -65,6 +63,12 @@ function Project({
               <HoverLink titleText={title} linkContent={link} />
             </p>
           </div>
+        </ScrollAnimation>
+        <ScrollAnimation
+          animateIn={
+            display === "flex-row-reverse" ? "fadeInRight" : "fadeInLeft"
+          }
+          animateOnce={true}>
           <div className="relative">
             <img
               src={imageURL}
@@ -79,13 +83,12 @@ function Project({
             : "hidden xl:block xl:top-0 xl:-right-4 xl:rotate-[.2rad]"
         }
         absolute bg-black border border-dashed border-black text-white dark:border dark:border-gray-200 dark:bg-white dark:text-black rounded-sm shadow-md px-4 py-2 text-center md:text-sm
-      `}
-            >
+      `}>
               {alt}
             </p>
           </div>
-        </div>
-      </ScrollAnimation>
+        </ScrollAnimation>
+      </div>
       <div className="mb-20 xl:mb-12"></div>
     </>
   );
