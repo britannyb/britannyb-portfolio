@@ -70,9 +70,9 @@ function Projects() {
           />
           <Project
             logo="projects/2logo.png"
-            title="motiveat web app"
-            description="my capstone project which is a meal planner that allows users to scan ingredients using their camera. It applies machine learning through Tensorflow.js (only works on certain devices)."
-            link="https://motiveat.vercel.app/"
+            title="motiveat prototype"
+            description="my capstone project which is a meal planner that allows users to scan ingredients using their camera. It applies machine learning through Tensorflow.js."
+            link="https://www.figma.com/design/ad0sLwSHntapWHLnvSsctn/MotivEat-Prototype?node-id=226-182&t=Vu4yOyCDL2DVEsPC-1"
             imageURL="projects/2.gif"
             alt="motiveat mobile interfaces"
             paletteColors={["65C2AF", "42A46A", "D78862", "202020"]}
