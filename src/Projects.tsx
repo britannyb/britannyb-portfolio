@@ -8,6 +8,31 @@ import ImageModal from "./components/ImageModal";
 import GlitchText from "./components/GlitchText";
 import LinkIcon from "./components/LinkIcon";
 
+interface ArticleProps {
+  title: string;
+  rslink: string;
+  jlink: string;
+}
+
+function Article({ title, rslink, jlink }: ArticleProps) {
+  return (
+    <div className="article-text py-6">
+      <div className="article-content border-4 border-dashed border-black dark:border-white">
+        <p className="article-title">{title}</p>
+        <p className="flex sm:flex-row flex-col justify-center items-center">
+          <span className="flex justify-center items-center">
+            <LinkIcon />
+            <span className="block sm:hidden">links:</span>{" "}
+          </span>
+          <HoverLink titleText="researchgate" linkContent={rslink} />
+          <span className="mx-2 hidden sm:block">&</span>
+          <HoverLink titleText="journal article" linkContent={jlink} />
+        </p>
+      </div>
+    </div>
+  );
+}
+
 function Projects() {
   const state_machine_nameB = "State Machine 1";
   const { rive, RiveComponent } = useRive({
@@ -191,29 +216,12 @@ function Projects() {
               </mark>
             </h3>
             <p>journal article(s) by me</p>
-            <div className="article-text py-12">
-              <div className="article-content border-4 border-dashed border-black dark:border-white">
-                <p className="article-title">
-                  An Overview of the Networking Issues of Cloud Gaming: A
-                  Literature Review
-                </p>
-                <p className="flex sm:flex-row flex-col justify-center items-center">
-                  <span className="flex justify-center items-center">
-                    <LinkIcon />
-                    <span className="block sm:hidden">links:</span>{" "}
-                  </span>
-                  <HoverLink
-                    titleText="researchgate"
-                    linkContent="https://www.researchgate.net/publication/366602157_An_Overview_of_the_Networking_Issues_of_Cloud_Gaming_A_Literature_Review"
-                  />
-                  <span className="mx-2 hidden sm:block">&</span>
-                  <HoverLink
-                    titleText="journal article"
-                    linkContent="https://ejournal.pnc.ac.id/index.php/jinita/article/view/1581"
-                  />
-                </p>
-              </div>
-            </div>
+            <Article
+              title="An Overview of the Networking Issues of Cloud Gaming: A
+                  Literature Review"
+              rslink="https://www.researchgate.net/publication/366602157_An_Overview_of_the_Networking_Issues_of_Cloud_Gaming_A_Literature_Review"
+              jlink="https://ejournal.pnc.ac.id/index.php/jinita/article/view/1581"
+            />
           </div>
         </ScrollAnimation>
       </div>
