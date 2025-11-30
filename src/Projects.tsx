@@ -10,11 +10,11 @@ import LinkIcon from "./components/LinkIcon";
 
 interface ArticleProps {
   title: string;
-  rslink: string;
-  jlink: string;
+  caption: string;
+  link: string;
 }
 
-function Article({ title, rslink, jlink }: ArticleProps) {
+function Article({ title, caption, link }: ArticleProps) {
   return (
     <div className="article-text py-6">
       <div className="article-content border-4 border-dashed border-black dark:border-white">
@@ -22,11 +22,8 @@ function Article({ title, rslink, jlink }: ArticleProps) {
         <p className="flex sm:flex-row flex-col justify-center items-center">
           <span className="flex justify-center items-center">
             <LinkIcon />
-            <span className="block sm:hidden">links:</span>{" "}
           </span>
-          <HoverLink titleText="researchgate" linkContent={rslink} />
-          <span className="mx-2 hidden sm:block">&</span>
-          <HoverLink titleText="journal article" linkContent={jlink} />
+          <HoverLink titleText={caption} linkContent={link} />
         </p>
       </div>
     </div>
@@ -215,12 +212,17 @@ function Projects() {
                 <GlitchText text="research" />
               </mark>
             </h3>
-            <p>journal article(s) by me</p>
+            <p>journal articles</p>
             <Article
               title="An Overview of the Networking Issues of Cloud Gaming: A
                   Literature Review"
-              rslink="https://www.researchgate.net/publication/366602157_An_Overview_of_the_Networking_Issues_of_Cloud_Gaming_A_Literature_Review"
-              jlink="https://ejournal.pnc.ac.id/index.php/jinita/article/view/1581"
+              caption="researchgate link"
+              link="https://www.researchgate.net/publication/366602157_An_Overview_of_the_Networking_Issues_of_Cloud_Gaming_A_Literature_Review"
+            />
+            <Article
+              title="(Adviser) Crop Suitability Recommendation Based on Soil Parameters and Environmental Factors with Gradient Boosting Trees and Random Forest Algorithm"
+              caption="journal link"
+              link="https://atiftap.org/s/JGB-19315.pdf"
             />
           </div>
         </ScrollAnimation>
